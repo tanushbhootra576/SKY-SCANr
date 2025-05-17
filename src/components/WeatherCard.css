@@ -1,0 +1,275 @@
+.card {
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    font-size: smaller;
+    margin-left: 10px;
+    background-color: #ffffff52;
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.com {
+    border: solid 2px rgb(3, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    width: 28%;
+    padding: 20px;
+}
+.card {
+    border-radius: 18px;
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    text-align: center;
+    width: 60%;
+    padding: 28px 24px;
+    font-size: 1rem;
+    margin: 24px auto;
+    backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(0,198,255,0.18);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px rgba(0,198,255,0.18);
+    transform: scale(1.02);
+}
+
+input, button {
+    border-radius: 10px;
+    border: 2px solid #00c6ff;
+    background: rgba(255,255,255,0.18);
+    color: #232526;
+    padding: 0 20px;
+    font-size: 1rem;
+    outline: none;
+    margin: 0 8px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus, button:focus {
+    border: 2px solid #0072ff;
+    box-shadow: 0 0 8px #00c6ff33;
+}
+
+button {
+    background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    transform: scale(1.06);
+}
+.theMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+label {
+    text-align: right;
+    min-width: 80px;
+    font-size: xx-large;
+}
+
+.temploc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+input {
+    margin: 0;
+    height: 44px;
+    border: solid rgb(0, 0, 0) 3px;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: large;
+    flex: 1;
+}
+
+button {
+    text-align: center;
+    height: 44px;
+    font-size: large;
+    border: solid rgb(0, 0, 0);
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+button:hover {
+    scale: 1.02;
+}
+
+.wC {
+    position: relative;
+    border: solid white;
+    border-radius: 20px;
+    height: 185px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 10px 15px;
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 50%;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.dis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.feel {
+    text-align: left;
+    font-size: large;
+}
+
+.temp {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.tempvalue {
+    font-size: 35px;
+}
+
+.wC:hover {
+    transform: scale(1.02);
+}
+
+.weatherGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px 10px;
+    color: #000000;
+}
+
+.gridItem {
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gridItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(186, 173, 220, 0.4);
+    border: 1px solid rgba(130, 200, 190, 0.3);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    background: none;
+}
+
+.value {
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.loc {
+    text-align: left;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ RESPONSIVE FIXES */
+@media (max-width: 768px) {
+    .theMain {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card,
+    .com,
+    .wC {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-line {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    label {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .weatherGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .dis {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loc {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .wC {
+        font-size: 28px;
+    }
+
+    input,
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
